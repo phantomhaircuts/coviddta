@@ -1082,17 +1082,24 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function IndexPage() {
+  var mystyle = {
+    color: "black",
+    backgroundColor: "DodgerBlue",
+    padding: "10px",
+    fontFamily: "monospace"
+  };
   return __jsx("div", {
+    style: mystyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 14
     },
     __self: this
   }, __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
     url: "https://covid19.mathdro.id/api",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 15
     },
     __self: this
   }));
