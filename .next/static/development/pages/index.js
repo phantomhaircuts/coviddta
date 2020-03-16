@@ -1095,12 +1095,6 @@ function IndexPage() {
       lineNumber: 6
     },
     __self: this
-  }), __jsx(_components_CountrySelector__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
   }));
 }
 
