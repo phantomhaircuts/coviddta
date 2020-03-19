@@ -138,28 +138,11 @@ function CountrySelector() {
       lineNumber: 11
     },
     __self: this
-  }, "Currently Showing ", selectedCountry), __jsx("select", {
-    onChange: e => {
-      setSelectedCountry(e.target.value);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, Object.entries(countries.countries).map(([country, code]) => __jsx("option", {
-    key: code,
-    value: countries.iso3[code],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, country))), __jsx(_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, selectedCountry), __jsx(_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
     url: `https://covid19.mathdro.id/api/countries/${selectedCountry}`,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 12
     },
     __self: this
   }));
@@ -287,22 +270,42 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 function IndexPage() {
   const mystyle = {
     color: "black",
-    backgroundColor: "DodgerBlue",
-    padding: "10px",
-    fontFamily: "monospace"
+    padding: "3vw",
+    margin: "0",
+    fontFamily: "helvetica",
+    display: "inline-block",
+    overflow: "hidden"
   };
   return __jsx("div", {
     style: mystyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 17
     },
     __self: this
-  }, __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Covid19 Stats"), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "Global"), __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
     url: "https://covid19.mathdro.id/api",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 20
+    },
+    __self: this
+  }), __jsx(_components_CountrySelector__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
     },
     __self: this
   }));

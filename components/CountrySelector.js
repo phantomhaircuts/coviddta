@@ -8,18 +8,7 @@ export default function CountrySelector() {
   if (!countries) return <p>Loading... </p>
   return (
     <div>
-      <h2>Currently Showing {selectedCountry}</h2>
-      <select onChange={e => {
-          setSelectedCountry(e.target.value);
-        }}
-      >
-        {Object.entries(countries.countries).map(
-          ([country, code]) => (
-            <option key={code} value={countries.iso3[code]}>
-              {country}
-            </option>
-        ))}
-      </select>
+      <h2>{selectedCountry}</h2>
       <Stats url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}></Stats>
     </div>
   );
